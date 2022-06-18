@@ -1,0 +1,194 @@
+*,
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --v-dark-cyan: hsl(179, 100%, 13%);
+  --grey-1: hsla(0, 0%, 100%, 0.75);
+  --grey-2: hsl(0, 0%, 95%);
+  --trans: all 400ms;
+  animation-duration: 0ms !important;
+  animation-delay: 0ms !important;
+}
+
+body {
+  background: #e0e0e0;
+}
+@media (max-width: 846px) {
+  body {
+    background: #fff;
+  }
+}
+
+.link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.link a {
+  margin-right: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(254, 254, 254, 0.464);
+  background: #000;
+  position: relative;
+  transition: var(--trans);
+}
+.link a:hover {
+  transform: translatey(10px);
+  transition: transform 200ms ease-in;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .content {
+  transition: var(--trans);
+  border-radius: 50px;
+  padding: 4rem 0;
+  margin: 0 5rem;
+}
+.main .content .cards {
+  display: flex;
+  margin: 0 15%;
+  transition: var(--trans);
+}
+.main .content .cards .card {
+  display: flex;
+  flex-direction: column;
+  padding: 2.3rem 2.8rem;
+  transition: var(--trans);
+}
+.main .content .cards .card:first-child {
+  background: var(--orange);
+  border-radius: 10px 0 0 10px;
+}
+.main .content .cards .card:first-child button {
+  color: var(--orange);
+}
+.main .content .cards .card:nth-child(2) {
+  background: var(--dark-cyan);
+}
+.main .content .cards .card:nth-child(2) button {
+  color: var(--dark-cyan);
+}
+.main .content .cards .card:last-child {
+  background: var(--v-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+.main .content .cards .card:last-child button {
+  color: var(--v-dark-cyan);
+}
+.main .content .cards .card .image {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.main .content .cards .card h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2rem;
+  color: var(--grey-2);
+  margin-bottom: 2rem;
+}
+.main .content .cards .card p {
+  margin-bottom: 6rem;
+  font: 400 15px Lexend deca;
+  color: var(--grey-1);
+  padding-right: 1.2em;
+  height: 50%;
+  line-height: 1.5;
+}
+.main .content .cards .card .btn {
+  position: relative;
+  margin-top: 2rem;
+}
+.main .content .cards .card .btn button {
+  position: absolute;
+  bottom: 0;
+  background: var(--grey-2);
+  outline: none;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font: 400 15px Lexend deca;
+  transition: var(--trans);
+  cursor: pointer;
+}
+.main .content .cards .card .btn button:hover {
+  background: none;
+  border: 1px solid var(--grey-2);
+  color: var(--grey-2);
+}
+@media (max-width: 1245px) {
+  .main .content .cards {
+    transition: var(--trans);
+    margin: 0 5%;
+  }
+}
+@media (max-width: 600px) {
+  .main .content .cards {
+    transition: var(--trans);
+  }
+}
+@media (max-width: 400px) {
+  .main .content .cards {
+    transition: var(--trans);
+    margin: 20% 2% !important;
+  }
+}
+@media (max-width: 1000px) {
+  .main .content {
+    transition: var(--trans);
+    margin: 0 5%;
+  }
+}
+@media (max-width: 900px) {
+  .main .content {
+    margin: 5rem 1rem;
+    padding: 1rem 0;
+  }
+}
+@media (max-width: 500px) {
+  .main .content {
+    margin: 5rem 0rem !important;
+    padding: 1rem 0;
+    animation: none !important;
+  }
+}
+@media (max-width: 846px) {
+  .main .content {
+    box-shadow: none !important;
+  }
+  .main .content .cards {
+    transition: var(--trans);
+    margin: 0 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .content .cards .card:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+  .main .content .cards .card:last-child {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #e8e8e8;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b9b4b4;
+  border-radius: 12px;
+}/*# sourceMappingURL=style.css.map */

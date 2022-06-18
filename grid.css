@@ -1,0 +1,120 @@
+*,
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --height: 300px;
+  --red: #ff0404;
+  --yello: #ffe100;
+  --green: #07e813;
+  --blue: #1010e9;
+  --bg: #000000;
+  --trans: 400ms;
+}
+
+html,
+body,
+main {
+  background: var(--bg);
+}
+
+.link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.link a {
+  margin-right: 2rem;
+  padding: 15px 25px;
+  text-decoration: none;
+  border: unset;
+  border-radius: 15px;
+  color: #000000;
+  background: #ffffff;
+  z-index: 1;
+  position: relative;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 4px 8px 19px -3px rgba(255, 255, 255, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+
+.link a:hover {
+  transform: translatey(10px);
+  transition: transform 200ms ease-in;
+}
+
+
+.main {
+  background: var(--bg);
+  display: grid;
+  place-items: center;
+}
+
+.main .container {
+  width: 100%;
+}
+
+.main .container .content {
+  margin: 3rem;
+}
+
+.main .container .content .boxes {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto;
+}
+
+.main .container .content .boxes .first-boxes {
+  display: grid;
+  grid-template-areas: "a a a b b";
+  gap: 1rem;
+}
+
+.main .container .content .boxes .first-boxes .red {
+  background: var(--red);
+  grid-area: a;
+}
+
+.main .container .content .boxes .first-boxes .yello {
+  background: var(--yello);
+  grid-area: b;
+}
+
+.main .container .content .boxes .second-boxes {
+  display: grid;
+  grid-template-areas: "c d";
+  width: 100%;
+  gap: 1rem;
+}
+
+.main .container .content .boxes .second-boxes .two-box {
+  gap: 1rem;
+}
+
+.main .container .content .boxes .second-boxes .green {
+  background: var(--green);
+  grid-area: c;
+}
+
+.main .container .content .boxes .second-boxes .blue {
+  background: var(--blue);
+  grid-area: d;
+  height: 100px;
+}
+
+.main .container .content .boxes .second-boxes .blue-2 {
+  background: var(--blue);
+  grid-area: e;
+  height: 180px;
+  margin-top: 20px;
+}
+
+.main .container .content .boxes .box {
+  height: var(--height);
+}
